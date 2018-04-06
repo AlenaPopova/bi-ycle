@@ -3,59 +3,85 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bike shop</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
-		<div class="container-header">
+		<div class="container container-header">
 			<nav class="main-navigation">
 				<div class="header-logo">
 					<a class="main-header-logo" href="#">
-						<img src="" width="" height="" alt="Логотип Bike shop">
+						<img src="img/shop_logo.svg" width="160" height="50" alt="Логотип Bike shop">
 					</a>
 				</div>
 				<ul class="site-navigation">
 					<li>
-						<select name="Bicycles">
+						<select class="navigation-option" name="Bicycles">
 							<option>Bicycles</option>
-							<option value="speed">Fixed/Single speed</option>
+							<option value="speed">
+								<a>Fixed/Single speed</a>
+							</option>
 							<option value="kind">City bikes</option>
 							<option value="series">Premium series</option>
 						</select>
 					</li>
-					<li><a href="#">Parts</a></li>
-					<li><a href="#">Accessoires</a></li>
-					<li><a href="#">Extras</a></li>
-					<li><a href="#">Cart</a></li>
+					<li>
+						<select class="navigation-option" name="Parts">
+							<option>Parts</option>
+							<a href="#">Parts</a>
+						</select>
+					</li>
+					<li>
+						<select class="navigation-option" name="Accessoires">
+							<option>Accessoires</option>
+							<a href="#">Accessoires</a>
+						</select>
+					<li>
+						<select class="navigation-option" name="Extras">
+							<option>Extras</option>
+							<a href="#">Extras</a>
+						</select>
 				</ul>
+				<div class="cart-navigation">
+					<a class="cart-link" href="#">
+						<span class="visually-hidden">Cart</span>
+					</a>
+				</div>
 			</nav>
+
+			<section class="container slider-container">
+				<h1>Handmade bicycle</h1>
+				<p class="our-slogan">You <span class="colortext">create</span> the <span class="colortext">journey</span>, we supply the <span class="colortext">parts</span>.</p>
+				<div class="go-to-catalog">
+					<a class="button button-catalog" href="#">Shop bikes</a>
+				</div>
+				<ul class="scroll-list">
+					<li class="scroll-item">
+						<a class="scroll-left">
+							<span class="visually-hidden">Left</span>
+						</a>
+					</li>
+					<li class="scroll-item">
+						<a class="scroll-active">
+							<span class="visually-hidden">Active</span>
+						</a>
+					</li>
+					<li class="scroll-item">
+						<a class="scroll-right">
+							<span class="visually-hidden">Right</span>
+						</a>
+					</li>
+				</ul>
+				<div class="loader-item">
+					<a class="loader">
+						
+					</a>
+				</div>
+			</section>
 		</div>
 	</header>
 	<main>
-		<section class="container slider-container">
-			<h1>Handmade bicycles</h1>
-			<p>You create the journey, we supply the parts.</p>
-			<a class="button button-catalog" href="#">Shop bikes</a>
-			<ul class="scroll-list">
-				<li class="scroll-item">
-					<a class="scroll-left">
-						<span class="visually-hidden">Left</span>
-					</a>
-				</li>
-				<li class="scroll-item">
-					<a class="scroll-active">
-						<span class="visually-hidden">Active</span>
-					</a>
-				</li>
-				<li class="scroll-item">
-					<a class="scroll-right">
-						<span class="visually-hidden">Right</span>
-					</a>
-				</li>
-			</ul>
-			</div>
-		</section>
-
 		<section class="container categories-container">
 			<h2>Categories</h2>
 			<ul class="catalog-list">
@@ -103,7 +129,21 @@
 			<ul class="popular-items-list">
 				<li class="popular-item">
 					<a class="popular-item-image" href="#">
-						<img src="img/item_photo_01.jpg"  width="490" height="391" alt="fixed gear">Fixed gear
+						<img src="img/item_photo_01.jpg"  width="490" height="391" alt="fixed gear">
+						<p>Fixed gear</p>
+					</a>
+					<div class="item-info">
+						<span class="price-item">$249 00</span>
+						<select class="option-item" name="option">
+							<option value="">Option</option>
+						</select>
+						<a class="button buy-button" href="#">Buy</a>
+					</div>
+				</li>
+				<li class="popular-item">
+					<a class="popular-item-image" href="#">
+						<img src="img/item_photo_02.jpg"  width="490" height="391" alt="fixed gear"> 
+						<p>Big boy ultra</p>
 					</a>
 					<div class="item-info">
 						<span class="price-item">$249 00</span>
@@ -115,19 +155,8 @@
 				</li>
 				<li class="popular-item">
 					<a class="popular-item-image" href="#">
-						<img src="img/item_photo_02.jpg"  width="490" height="391" alt="fixed gear"> Big boy ultra
-					</a>
-					<div class="item-info">
-						<span class="price-item">$249 00</span>
-						<select name="option">
-							<option value="">Option</option>
-						</select>
-						<a class="button buy-button" href="#">Buy</a>
-					</div>
-				</li>
-				<li class="popular-item">
-					<a class="popular-item-image" href="#">
-						<img src="img/item_photo_03.jpg"  width="490" height="391" alt="fixed gear">Sanchaez
+						<img src="img/item_photo_03.jpg"  width="490" height="391" alt="fixed gear">
+						<p>Sanchaez</p>
 					</a>
 					<div class="item-info">
 						<span class="price-item">$249 00</span>
@@ -140,6 +169,7 @@
 			</ul>
 		</section>
 	</main>
+
 	<footer class="main-footer">
 		<section class="contact-info">
 			<h2>Contact us</h2>
@@ -155,14 +185,30 @@
 				</p>
 				<p class="user-info">
 					<label for="user-email"></label>
-					<input type="text" name="email" value="" placeholder="email@example.com">
+					<input type="email" name="email" value="" placeholder="email@example.com">
 				</p>
 				<p>
 				<label for="user-letter"></label>
-				<textarea id="user-letter" name="your-letter" rows="5" cols="50" placeholder="MESSAGE"></textarea>
+					<textarea id="user-letter" name="your-letter" rows="8" cols="50" placeholder="MESSAGE"></textarea>
 				</p>
 				<button class="button send-letter" type="submit" value="Отправить">SEND</button>
 			</form>
+		</section>
+
+		<section class="container footer-main-navigation">
+			<nav class="footer-navigation">
+				<div class="footer-logo">
+					<a class="footer-logo-image" href="#">
+						<img src="img/shop_logo_dark.svg" width="120" height="37" alt="Логотип Bike shop">
+					</a>
+				</div>
+				<ul class="footer-navigation-list">
+					<li><a href="#">Bicycles</a></li>
+					<li><a href="#">Parts</a></li>
+					<li><a href="#">Accessoires</a></li>
+					<li><a href="#">Extras</a></li>
+				</ul>
+			</nav>
 		</section>
 	</footer>
 </body>
