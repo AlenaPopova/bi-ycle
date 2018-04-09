@@ -42,12 +42,19 @@
 							<option>Extras</option>
 							<a href="#">Extras</a>
 						</select>
+					<li>
+						<div class="cart-navigation">
+							<a class="cart-link" href="#">
+							<span class="visually-hidden">Cart</span>
+							</a>
+						</div>
+					</li>
 				</ul>
-				<div class="cart-navigation">
+				<!--<div class="cart-navigation">
 					<a class="cart-link" href="#">
 						<span class="visually-hidden">Cart</span>
 					</a>
-				</div>
+				</div>-->
 			</nav>
 
 			<section class="container slider-container">
@@ -147,7 +154,7 @@
 					</a>
 					<div class="item-info">
 						<span class="price-item">$249 00</span>
-						<select name="option">
+						<select class="option-item" name="option"> Oprion
 							<option value="">Option</option>
 						</select>
 						<a class="button buy-button" href="#">Buy</a>
@@ -160,7 +167,7 @@
 					</a>
 					<div class="item-info">
 						<span class="price-item">$249 00</span>
-						<select name="option">
+						<select class="option-item" name="option">
 							<option value="">Option</option>
 						</select>
 						<a class="button buy-button" href="#">Buy</a>
@@ -176,19 +183,19 @@
 			<p>Please contact us for all inquiries and purchase options</p>
 			<form class="user-form" method="post" action="https://echo.htmlacademy.ru">
 				<p class="user-info">
-					<label for="user-name"></label>
+					<!--<label for="user-name"></label>-->
 					<input type="text" name="user" value="" placeholder="NAME">
 				</p>
 				<p class="user-info">
-					<label for="user-surname"></label>
+					<!--<label for="user-surname"></label>-->
 					<input type="text" name="user" value="" placeholder="SURNAME">
 				</p>
 				<p class="user-info">
-					<label for="user-email"></label>
+					<!--<label for="user-email"></label>-->
 					<input type="email" name="email" value="" placeholder="email@example.com">
 				</p>
 				<p>
-				<label for="user-letter"></label>
+				<label for="user-info user-letter"></label>
 					<textarea id="user-letter" name="your-letter" rows="8" cols="50" placeholder="MESSAGE"></textarea>
 				</p>
 				<button class="button send-letter" type="submit" value="Отправить">SEND</button>
