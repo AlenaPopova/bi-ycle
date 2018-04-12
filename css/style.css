@@ -178,6 +178,11 @@ select {
 	color: black;
 }
 
+.option-item:hover {
+	background-color: black;
+	color: white;
+}
+
 /*СЛАЙДЕР*/
 
 .slider-container {
