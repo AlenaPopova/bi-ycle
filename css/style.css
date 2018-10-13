@@ -6,11 +6,11 @@ body {
 	color: black;
 	font-size: 15px;
 	font-height: 32px;
-	width: 100%;
+
 }
 
 .main-header {
-	width: 1875px;
+
 }
 
 a {
@@ -84,20 +84,23 @@ h2 {
 
 .main-header {
 	padding-top: 20px;
-	width: 1920px;
+
 	background-color: black;
 	background-image: url(../img/slider-1.jpg);
+	background-size: cover; /*чтобы  фоновая картинка растягивалась на всю ширину*/
+	background-repeat: no-repeat;
+}
 	/*height:980px;*/
 }
 
 .container {
-	width: 1920;
+
 	margin: 0;
 	padding: 0 23px;
 }
 
 .main-navigation {
-	width: 1097;
+
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 330px;
@@ -120,7 +123,7 @@ h2 {
 	left: 60px;
 }
 
-.main-header-logo:before {
+/*.main-header-logo:before {
 	content: "";
 	position: absolute;
 	top: -50px;
@@ -134,7 +137,7 @@ h2 {
 
 background: rgba(234, 255, 45, 0.2);
 box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-}
+}*/
 
 .site-navigation {
 	list-style: none;
@@ -150,31 +153,14 @@ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 	align-items: center;
 }
 
-.site-navigation li{
+
+.navigation-item {
+	color: white;
 	padding-right: 30px;
 }
 
-select {
-	color: white;
-	border-radius: 5px;
-	padding: 5px 0;
-	font-weight: bold;
-}
-
-.navigation-option option {
+.navigation-item: hover{
 	background-color: yellow;
-}
-
-.navigation-option {
-	background-color: transparent; 
-	border: none;
-	width: 80px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.option-accessoires {
-	width: 120px;
 }
 
 .cart-navigation .cart-link {
@@ -203,9 +189,22 @@ select {
 	color: white;
 }
 
-.navigation-option:hover {
+.sub-menu {
+	list-style: none;
+	display: none;
 	background-color: yellow;
+	border-radius: 5px;
+	padding: 10px;
+	width: 150px;
 	color: black;
+}
+
+.sub-menu-item {
+	color: white;
+}
+
+.navigation-item:hover .sub-menu {
+	display: block;
 }
 
 /*СЛАЙДЕР*/
@@ -300,12 +299,13 @@ p .colortext {
 /*КАТЕГОРИИ*/
 
 .categories-container {
-	width: 1920px;
+
 	background-image: url(../img/categories_image.png);
 	background-repeat: no-repeat;
 	padding-top: 75px;
 	padding-bottom: 170px;
 	margin-bottom: 72px;
+	background-size: cover; /*чтобы  фоновая картинка растягивалась на всю ширину*/
 }
 
 .catalog-list {
@@ -397,7 +397,7 @@ p .colortext {
 }
 
 .popular-items-list {
-	width: 1874px;
+
 	margin: 0px;
 	margin-bottom: 34px;
 	list-style: none;
@@ -468,7 +468,8 @@ p .colortext {
 .contact-info {
 	background-image: url("../img/contact_photo.jpg");
 	background-repeat: no-repeat;
-	width: 1920px;
+	background-size: cover; /*чтобы  фоновая картинка растягивалась на всю ширину*/
+}
 
 	margin: 0;
 	padding: 0;
@@ -533,12 +534,9 @@ p .colortext {
 .footer-main-navigation {
 	/*width: 1920px;*/
 	background-color: #fcff19;
-	width: 1920px;
-	
 }
 
 .footer-navigation {
-	width: 1097px;
 	padding-top: 30px;
 	padding-bottom: 17px;
 	display: flex;
